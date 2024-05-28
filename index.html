@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <title>My test page</title>
+  </head>
+  <body onload="GenerateCube(0.5, 0.8, 0, 1);">
+    <canvas id="main-canvas" width="800" height="600"></canvas>
+
+    <form id="cubeData">
+      <label for="x_loc">Pozycja_x</label>
+      <input type="text" id="x_loc" name="x_loc" />
+
+      <br /><br />
+      <label for="y_loc">Pozycja_y</label>
+      <input type="text" id="y_loc" name="y_loc" />
+
+      <br /><br />
+      <label for="z_loc">Pozycja_z</label>
+      <input type="text" id="z_loc" name="z_loc" />
+
+      <br /><br />
+      <label for="cubeSize">Rozmiar</label>
+      <input type="text" id="cubeSize" name="cubeSize" />
+
+      <br /><br />
+      <button type="button" onclick="submitForm()">Ok</button>
+    </form>
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/gl-matrix@3/gl-matrix.js"></script>
+  <script src="script.js"></script>
+</html>
